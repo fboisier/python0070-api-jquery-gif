@@ -59,7 +59,8 @@
                     return false;
                 }
 
-
+                // OJO la constante API_PANCHO_GIF se debe colocar en un archivo llamado secreto.js
+                // obten tu propia api key en : https://developers.giphy.com/docs/api/endpoint#search
                 const url = "https://api.giphy.com/v1/gifs/search?api_key="+ API_PANCHO_GIF +"&limit=10&q=";
 
                 $.get( url + buscado, function(resultado){
